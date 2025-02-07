@@ -51,7 +51,6 @@ def update_post(id):
         article.title = request.form['title']
         article.intro = request.form['intro']
         article.text = request.form['text']
-
         try:
             db.session.commit()
             return redirect("/posts")
